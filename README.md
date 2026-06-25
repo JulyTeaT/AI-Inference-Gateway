@@ -41,7 +41,7 @@ GEMINI_API_KEY=your_actual_api_key_here
 
 ## Usage (Server and Swagger UI)
 
-**1. Run the server:**
+**Run the server:**
 
 uvicorn main:app --reload
 
