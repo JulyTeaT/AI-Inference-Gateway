@@ -27,3 +27,23 @@ This project transforms a standard AI generation script into a scalable web serv
 git clone [https://github.com/yourusername/AI-Inference-Gateway.git](https://github.com/yourusername/AI-Inference-Gateway.git)
 cd AI-Inference-Gateway
 
+**2. Create a virtual environment:**
+
+python -m venv venv
+
+**3. Install dependencies:**
+
+pip install fastapi uvicorn google-genai python-dotenv pydantic
+
+**4. .env(Gemini API key):**
+
+GEMINI_API_KEY=your_actual_api_key_here
+
+## Usage (Server and Swagger UI)
+
+**1. Run the server:**
+
+uvicorn main:app --reload
+
+Run the server with hot-reloading enabled for development
+Open your browser and navigate to http://127.0.0.1:8000/docs#. You will see the interactive Swagger UI where you can directly test the /generate endpoint.
